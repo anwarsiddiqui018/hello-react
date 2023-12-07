@@ -1,28 +1,6 @@
 
-{/* <div id="parent">
-    <div id="child">
-        <h1>I'm h1 tag </h1>
-        <h1>I'm h2 tag </h1>
-
-    </div>
-
-</div> 
-<div id="child2">
-        <h1>I'm h1 tag </h1>
-        <h1>I'm h2 tag </h1>
-
-    </div>
-
-
-*/}
-
-
-
-// const heading = React.createElement(
-//     "h1",
-//     {id : "heading", xyz : "abc"},
-//     "Hello World from React!!"
-// );
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement("div", {id: "parent"},
     [

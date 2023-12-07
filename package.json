@@ -1,0 +1,34 @@
+{
+  "name": "salam-react",
+  "version": "1.0.0",
+  "description": "This is Hello React starting from zero",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anwarsiddiqui018/hello-react.git"
+  },
+  "keywords": [
+    "hello",
+    "react",
+    "anwar"
+  ],
+  "author": "Anwar Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anwarsiddiqui018/hello-react/issues"
+  },
+  "homepage": "https://github.com/anwarsiddiqui018/hello-react#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist": [
+    "last 2 version"
+  ]
+}
