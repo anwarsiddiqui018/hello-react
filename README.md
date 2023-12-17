@@ -12,3 +12,21 @@
 - Minification
 - Bundling 
 - Compress
+
+
+/**
+ *
+ * Header
+ *  -logo
+ *  -Nav Items
+ * Body
+ *  -Search
+ *  -RestaurantCard
+ *      -Img
+ *      - Name of Res., star Rating, cuisine,
+ * Footer
+ *  -Copyright
+ *  -Links
+ *  -Address
+ *  -Contact
+ */
