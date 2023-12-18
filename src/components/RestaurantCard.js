@@ -9,13 +9,12 @@ const RestaurantCard = (props) => {
       avgRating,
       costForTwo,
       sla,
-      areaName,
-      // deliveryTime,
+      aggregatedDiscountInfoV3,
       totalRatingsString,
-      // sla.deliveryTime,
     } = resData?.info; // this is optional chaining
 
-    const { deliveryTime, lastMileTravel, serviceability, slaString, lastMileTravelString, iconType } = sla;
+    // const { slaString } = sla;
+    // const {areaName} = aggregatedDiscountInfoV3;
     return (
       <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
         <img className="res-logo" alt="res-logo" src={CDN_URL + cloudinaryImageId
@@ -23,10 +22,10 @@ const RestaurantCard = (props) => {
         />
         <h3>{name}</h3>
         <h4>{cuisines.join(", ")}</h4>
-        <h4>{areaName}</h4>
+        <h4>{aggregatedDiscountInfoV3?.areaName}</h4>
         <h4>{avgRating}</h4>
         <h4>{costForTwo}</h4>
-        <h4>{slaString}</h4>
+        <h4>{sla?.slaString}</h4>
         <h4>{totalRatingsString}</h4>
         
       </div>
