@@ -13,8 +13,6 @@ const RestaurantCard = (props) => {
       totalRatingsString,
     } = resData?.info; // this is optional chaining
 
-    // const { slaString } = sla;
-    // const {areaName} = aggregatedDiscountInfoV3;
     return (
       <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
         <img className="res-logo" alt="res-logo" src={CDN_URL + cloudinaryImageId
