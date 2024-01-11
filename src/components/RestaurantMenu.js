@@ -10,7 +10,6 @@ const RestaurantMenu = () => {
 
   const { name, cuisines, costForTwoMessage } =
     resInfo?.cards[0]?.card?.card?.info;
-  console.log(resInfo?.cards[0]?.card?.card?.info);
 
   const categories =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
@@ -27,7 +26,10 @@ const RestaurantMenu = () => {
       </p>
       {/* categories accordions */}
       {categories.map((category) => (
-        <RestaurantCategory data={category?.card?.card} />
+        <RestaurantCategory
+          key={category?.card?.card.title}
+          data={category?.card?.card}
+        />
       ))}
     </div>
   );
