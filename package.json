@@ -4,7 +4,7 @@
   "description": "This is Hello React starting from zero",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html && postcss src/styles/index.css -o build/static/css/index.css",
     "test": "jest"
   },
   "repository": {
@@ -24,7 +24,9 @@
   "homepage": "https://github.com/anwarsiddiqui018/hello-react#readme",
   "devDependencies": {
     "parcel": "^2.10.3",
-    "process": "^0.11.10"
+    "postcss": "^8.4.33",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.1"
   },
   "dependencies": {
     "react": "^18.2.0",
